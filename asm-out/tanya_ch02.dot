@@ -1,0 +1,36 @@
+digraph types {
+	graph [rankdir=BT];
+	node [label="\N"];
+	graph [bb="0,0,719,444"];
+	"assignment1ch2/B" [label="{assignment1ch2\nB|public [init]()V\npublic m()V\n}", shape=record, style=solid, pos="198,39", rects="144.5,39,251.5,77 144.5,1,251.5,39", width="1.4722", height="1.0694"];
+	"assignment1ch2/C" [label="{assignment1ch2\nC|public [init]()V\npublic m()V\nn()V\n}", shape=record, style=dashed, pos="359,160", rects="305.5,167.5,412.5,205.5 305.5,114.5,412.5,167.5", width="1.4722", height="1.2778"];
+	"java/lang/Object" [label="java.lang\nObject", shape=ellipse, style=dotted, pos="396,269", width="1.3056", height="0.75"];
+	"assignment1ch2/A" [label="{assignment1ch2\nA|public [init]()V\npublic m()V\n}", shape=record, style=solid, pos="609,39", rects="555.5,39,662.5,77 555.5,1,662.5,39", width="1.4722", height="1.0694"];
+	"assignment1ch2/B.<init>()V" [label="assignment1ch2/B\n<init>()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="60,351", width="1.6667", height="0.52778"];
+	"assignment1ch2/B.m()V" [label="assignment1ch2/B\nm()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="198,351", width="1.6667", height="0.52778"];
+	"assignment1ch2/C.<init>()V" [label="assignment1ch2/C\n<init>()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="286,425", width="1.6667", height="0.52778"];
+	"assignment1ch2/C.m()V" [label="assignment1ch2/C\nm()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="379,351", width="1.6667", height="0.52778"];
+	"assignment1ch2/C.n()V" [label="assignment1ch2/C\nn()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="521,269", width="1.6667", height="0.52778"];
+	"assignment1ch2/A.<init>()V" [label="assignment1ch2/A\n<init>()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="518,351", width="1.6944", height="0.52778"];
+	"assignment1ch2/A.m()V" [label="assignment1ch2/A\nm()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="658,351", width="1.6944", height="0.52778"];
+	"assignment1ch2/B" -> "assignment1ch2/C" [style=solid, arrowhead=empty, pos="e,305.33,119.67 248.94,77.285 264.24,88.782 281.19,101.52 297.11,113.49"];
+	"assignment1ch2/C" -> "java/lang/Object" [style=solid, arrowhead=empty, pos="e,386.92,242.25 374.48,205.59 377.56,214.66 380.75,224.07 383.7,232.78"];
+	"assignment1ch2/A" -> "assignment1ch2/C" [style=solid, arrowhead=empty, pos="e,412.54,134.09 555.37,64.958 516.15,83.938 462.84,109.74 421.67,129.67"];
+	"assignment1ch2/B" -> "assignment1ch2/B.<init>()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="181.08,77.257 151.35,144.46 90.801,281.36 68.496,331.79"];
+	"assignment1ch2/B" -> "assignment1ch2/B.m()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="198,77.257 198,144.46 198,281.36 198,331.79"];
+	"assignment1ch2/C" -> "assignment1ch2/C.<init>()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="341.89,205.7 337.76,217.45 333.52,230.13 330,242 312.51,301.06 296.92,372.36 289.92,405.86"];
+	"assignment1ch2/C" -> "assignment1ch2/C.m()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="342.72,205.57 335.56,232.39 330.67,266.7 340,296 344.19,309.16 352.81,321.87 360.87,331.76"];
+	"assignment1ch2/C" -> "assignment1ch2/C.n()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="412.94,196.3 439.64,214.26 470.76,235.19 492.73,249.98"];
+	"assignment1ch2/A" -> "assignment1ch2/A.<init>()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="615.46,77.421 622.35,130.16 627.7,226.36 590,296 581.99,310.8 568.1,322.84 554.64,331.84"];
+	"assignment1ch2/A" -> "assignment1ch2/A.m()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="616.4,77.105 618.62,88.914 620.99,101.98 623,114 636.51,194.82 649.95,291.6 655.43,331.91"];
+	"assignment1ch2/B.<init>()V" -> "assignment1ch2/C.<init>()V" [color=blue, pos="e,225.62,407.15 112.21,370.06 143.04,380.46 182.4,393.37 215.89,404.06"];
+	"assignment1ch2/B.<init>()V" -> "assignment1ch2/C.<init>()V" [color=red, pos="e,233.69,405.91 120.29,368.82 152.33,378.97 191.61,391.79 223.91,402.62"];
+	"assignment1ch2/C.n()V" -> "assignment1ch2/A.<init>()V" [color=blue, pos="e,512.88,331.8 514.5,288.02 513.18,297.99 512.49,310.41 512.57,321.59"];
+	"assignment1ch2/C.n()V" -> "assignment1ch2/A.<init>()V" [color=red, pos="e,524.52,331.8 526.1,288.02 526.7,297.99 526.47,310.41 525.58,321.59"];
+	"assignment1ch2/C.n()V" -> "assignment1ch2/C.m()V" [color=blue, pos="e,406.43,331.8 482.26,288.02 461.33,299.48 435.71,314.18 415.18,326.51"];
+	"assignment1ch2/C.n()V" -> "assignment1ch2/B.m()V" [color=red, pos="e,258.22,340.77 475.34,288.05 467.62,290.92 459.64,293.7 452,296 390.85,314.45 319.66,329.32 268.23,338.92"];
+	"assignment1ch2/C.n()V" -> "assignment1ch2/A.m()V" [color=red, pos="e,625.92,331.8 552.77,288.02 571.92,299.48 596.49,314.18 617.08,326.51"];
+	"assignment1ch2/C.n()V" -> "assignment1ch2/C.m()V" [color=red, pos="e,417.81,331.94 493.87,288.02 474.89,299.62 449.16,314.56 426.82,326.97"];
+	"assignment1ch2/A.<init>()V" -> "assignment1ch2/C.<init>()V" [color=blue, pos="e,339.74,405.95 456.88,368.63 423.74,378.86 382.9,391.85 349.42,402.78"];
+	"assignment1ch2/A.<init>()V" -> "assignment1ch2/C.<init>()V" [color=red, pos="e,346.2,407.65 464.24,370.06 431.96,380.66 390.6,393.87 355.82,404.67"];
+}

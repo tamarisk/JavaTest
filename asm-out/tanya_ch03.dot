@@ -1,0 +1,19 @@
+digraph types {
+	graph [rankdir=BT];
+	node [label="\N"];
+	graph [bb="0,0,280,348"];
+	"java/lang/Object" [label="java.lang\nObject", shape=ellipse, style=dotted, pos="47,321", width="1.3056", height="0.75"];
+	"assignment1ch3/A" [label="{assignment1ch3\nA|public [init]()V\n}", shape=record, style=solid, pos="153,31", rects="99.5,23.5,206.5,61.5 99.5,0.5,206.5,23.5", width="1.4722", height="0.86111"];
+	"assignment1ch3/B" [label="{assignment1ch3\nB|public [init]()V\n}", shape=record, style=dashed, pos="87,129", rects="33.5,121.5,140.5,159.5 33.5,98.5,140.5,121.5", width="1.4722", height="0.86111"];
+	"assignment1ch3/I" [label="{assignment1ch3\nI|}", shape=record, style=dotted, pos="88,227", rects="34.5,219.5,141.5,257.5 34.5,196.5,141.5,219.5", width="1.4722", height="0.86111"];
+	"assignment1ch3/A.<init>()V" [label="assignment1ch3/A\n<init>()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="219,129", width="1.6944", height="0.52778"];
+	"assignment1ch3/B.<init>()V" [label="assignment1ch3/B\n<init>()V", shape=rectangle, style="filled,", fillcolor=darkolivegreen1, pos="219,227", width="1.6667", height="0.52778"];
+	"assignment1ch3/A" -> "assignment1ch3/B" [style=solid, arrowhead=empty, pos="e,107.63,98.37 132.3,61.739 126.28,70.678 119.62,80.564 113.3,89.942"];
+	"assignment1ch3/B" -> "assignment1ch3/I" [style=dashed, arrowhead=empty, pos="e,87.687,196.37 87.314,159.74 87.399,168.13 87.493,177.36 87.584,186.21"];
+	"assignment1ch3/B" -> "java/lang/Object" [style=solid, arrowhead=empty, pos="e,34.8,294.82 50.403,159.64 40.571,170.05 31.224,182.5 26,196 14.851,224.81 22.242,259.6 31.193,285.16"];
+	"assignment1ch3/I" -> "java/lang/Object" [style=solid, arrowhead=empty, pos="e,58.455,294.74 74.688,257.52 70.801,266.43 66.519,276.25 62.508,285.44"];
+	"assignment1ch3/A" -> "assignment1ch3/A.<init>()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="173.7,61.739 184.29,77.456 196.84,96.099 206.05,109.77"];
+	"assignment1ch3/B" -> "assignment1ch3/B.<init>()V" [style=bold, arrowhead=none, color=darkolivegreen1, pos="128.4,159.74 149.57,175.46 174.68,194.1 193.09,207.77"];
+	"assignment1ch3/A.<init>()V" -> "assignment1ch3/B.<init>()V" [color=blue, pos="e,213.5,207.68 213.5,148.36 212.15,162.32 211.89,181.42 212.74,197.3"];
+	"assignment1ch3/A.<init>()V" -> "assignment1ch3/B.<init>()V" [color=red, pos="e,224.5,207.68 224.5,148.36 225.85,162.32 226.11,181.42 225.26,197.3"];
+}
